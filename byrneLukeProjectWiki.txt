@@ -1,0 +1,13 @@
+Luke Byrne Mobile development 2 
+********************************
+This is a wiki to explain to user how to use the program.
+The user is presented with a beautifully designed interface where
+they are prompted to enter their first and last name along with their
+age and gender. They can from there proceed to complete a BMI(bodymass index)
+calculation to add to their information profile which can be accessed from 
+the calculator page or the homepage. They can also choose to "Go for a run?" 
+which will bring them to a page where they can check the weather at that time,
+this was originally planned to be a step counter/tracker however the API would 
+not co-operate and this had to be changed to a weather API at the last minute.
+The final page of the program allows you to view your "profile" which is a 
+compilation of all the information gathered and calculated thus far.

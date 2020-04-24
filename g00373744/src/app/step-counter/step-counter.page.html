@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>WeatherCheck</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="outputrate" *ngFor="let output of outputs">
+    <ion-label color="primary">Weather is:</ion-label>
+    <div>{{ output.clouds }} </div>
+  </ion-list>
+  <ion-label color="primary"></ion-label>
+  <ion-button (click)="getData()">Get weatherinfo</ion-button>
+
+  
+  <ion-button (click)="goBack()">Back to HomePage</ion-button>
+
+</ion-content>

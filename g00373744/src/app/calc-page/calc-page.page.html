@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Welcome {{firstname}} {{lastname}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+
+      <ion-label floating>Weight (kg)</ion-label>
+
+      <ion-input type="number" [(ngModel)]="userWeight"></ion-input>
+
+    </ion-item>
+
+  
+
+    <ion-item>
+
+      <ion-label floating>Height (cm)</ion-label>
+
+      <ion-input type="number" [(ngModel)]="userHeight"></ion-input>
+
+    </ion-item>
+
+  </ion-list>
+
+  
+
+  <div padding>
+
+    <ion-button (click)="calculateBMI()">Calculate</ion-button>
+
+  </div>
+
+
+
+  <ion-card *ngIf="userBmi">
+
+    <ion-card-header>
+
+      BMI Calculation
+
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <p>Person: Weight {{this.userWeight}} kg, Height {{this.userHeight}} cm</p>
+
+      <p>BMI: {{userBmi}}</p>
+
+      <p><strong>You are {{outputString}}</strong></p>
+
+    </ion-card-content>
+
+  </ion-card>
+
+  
+
+    <ion-button  (click)="toHome()">Go Back</ion-button>
+    <ion-button  (click)="toDatabase()">Go to Profile</ion-button>
+
+  
+
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!--outputting values that have been ionically stored-->
+  <ion-card-content>
+    
+    <p><strong>Name: {{fName}} {{lName}}</strong></p>
+
+    <p><strong>Age: {{age}}</strong></p>
+
+    <p><strong>Height: {{height}}</strong></p>
+
+    <p><strong>Weight: {{weight}}</strong></p>
+
+    <p><strong>Bmi: {{bmi}}</strong></p>
+
+    <p><strong>You are {{gender}}</strong></p>
+
+  </ion-card-content>
+<!--button to return to homepage-->
+<ion-button (click)="goBack()">Return to homepage</ion-button>
+</ion-content>

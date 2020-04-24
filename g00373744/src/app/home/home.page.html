@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+     Welcome To Health Assistant
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!--title and formatting for homepage-->
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Welcome to FitnessMyPal</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content padding>
+
+    <ion-list>
+  
+      <ion-item>
+  <!--label and input for formatting purposes-->
+        <ion-label floating>Enter First Name: </ion-label>
+  
+        <ion-input type="string" [(ngModel)]="userFirstName"></ion-input><!--ngmodel to use the variable and store it using ionicStorage-->
+  
+      </ion-item>
+  
+    
+  
+      <ion-item>
+  
+        <ion-label floating>Enter Last Name: </ion-label>
+  
+        <ion-input type="string" [(ngModel)]="userLastName"></ion-input>
+  
+      </ion-item>
+
+      <ion-item>
+  
+        <ion-label floating>Enter age: </ion-label>
+  
+        <ion-input type="number" [(ngModel)]="age"></ion-input>
+  
+      </ion-item>
+
+  
+      <ion-item>
+        <ion-label>Gender</ion-label>
+        <ion-select [(ngModel)]="value" placeholder="Select One"><!--dropdown box-->
+          <ion-select-option >Female</ion-select-option>
+          <ion-select-option >Male</ion-select-option>
+        </ion-select>
+      </ion-item>
+  
+    </ion-list>
+
+    <ion-button (click)="saveDetails()">Save details</ion-button>
+    
+
+ <ion-button (click)="go()">Go to BMI configurator</ion-button>
+ <ion-button (click)="goToDb()">Go for a run?</ion-button>
+ <ion-button (click)="goToProfile()">Go to Profile</ion-button>
+</ion-content>
